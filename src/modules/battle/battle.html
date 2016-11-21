@@ -1,0 +1,12 @@
+<template>
+    <h2>Plains</h2>
+    <p>Here you can battle creates for experience and gold.</p>
+    <table>
+        <tr repeat.for="creature of creatures">
+            <td>${creature.name}</td>
+            <td>
+                <a class="full-width-button" href="/#/battle-summary/${creature.id}">Attack</a>
+            </td>
+        </tr>
+    </table>
+</template>

@@ -1,0 +1,21 @@
+<template>
+    <require from="./train.css"></require>
+    <h2>Train</h2>
+    <ul class="list">
+        <li>
+            <span>Strength</span><br/>
+            <span>Currently ${strength}</span><br/><br/>
+            <a class="full-width-button action" click.trigger="train('strength')">Train for ${strength * 10} Coins</a>
+        </li>
+        <li>
+            <span>Health</span><br/>
+            <span>Currently ${health}</span><br/><br/>
+            <a class="full-width-button action" click.trigger="train('health')">Train for ${health * 10} Coins</a>
+        </li>
+        <li>
+            <span>Defence</span><br/>
+            <span>Currently ${defence}</span><br/><br/>
+            <a class="full-width-button action" click.trigger="train('defence')">Train for ${defence * 10} Coins</a>
+        </li>
+    </ul>
+</template>
